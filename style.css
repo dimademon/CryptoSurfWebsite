@@ -3,21 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #0A0624; /* Dark background */
-    color: #ffffff;
     line-height: 1.5;
 }
 /* Header Section */
 header {
-    background-color: #003fc7e3;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 10%;
     border-radius: 10px;
+    box-shadow: inset 0 0px 2px rgb(0, 255, 200); /* Glowing shadow */
 }
 header .logo-container {
     display: flex;
@@ -58,11 +57,10 @@ nav a:hover {
 }
 /* Hero Section */
 .hero {
-    background-color: #0A0624;
+    background-color: rgb(10, 6, 36, 0%);
     text-align: center;
     padding: 60px 10%;
     border-radius: 20px;
-    box-shadow: inset 0 0px 40px rgb(0, 255, 200); /* Glowing shadow */
 }
 .hero-content {
     max-width: 800px;
@@ -78,25 +76,31 @@ nav a:hover {
 .hero-content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #00d6a2;
+    color: #B8ECFF;
 }
 .hero-content p {
     font-size: 1.1rem;
     margin-bottom: 30px;
     color: #d2d2d2;
 }
+.hero-plans-line {
+    width: 100%;
+    height: 2px;
+    color: #11FFFF;
+    z-index: 1;
+}
 /* Plans Section */
 .plans {
-    background-color: #0A0624;
+    background-color: rgb(10, 6, 36, 0%);
     padding: 50px 10%;
     border-radius: 20px;
-    box-shadow: inset 0 0px 40px #11FFFF; /* Glowing shadow */
+    /* box-shadow: inset 0 0px 40px #11FFFF; /* Glowing shadow */
 }
 .plans h2 {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 40px;
-    color: #00d6a2;
+    color: #B8ECFF;
 }
 .plan-cards {
     display: flex;
@@ -104,19 +108,18 @@ nav a:hover {
     justify-content: center;
     gap: 20px;
     border-radius: 15px;
-    /* box-shadow: inset 0px -15px 40px rgba(0, 214, 160, 0.786); /* Glowing shadow */
     padding: 6px;
     padding-top: 10px;
     padding-bottom: 15px;
 }
 .plan {
-    background-color: #0A0624;
+    background-color: rgb(10, 6, 36, 0%);
     border-radius: 10px;
     width: 200px;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s;
-    box-shadow: 0 0px 12px rgb(0, 203, 214); /* Glowing shadow */
+    box-shadow: 0 0px 3px rgb(0, 203, 214); /* Glowing shadow */
 }
 .plan:hover {
     transform: translateY(-5px);
@@ -146,18 +149,18 @@ nav a:hover {
 }
 /* Download Section */
 .download {
-    background-color: #0A0624;
+    background-color: rgb(10, 6, 36, 0%);
     padding: 50px 10%;
     text-align: center;
     border-radius: 20px;
-    box-shadow: inset 0 0px 40px rgba(247, 255, 253, 0.948); /* Glowing shadow */
+    /* box-shadow: inset 0 0px 40px rgba(247, 255, 253, 0.948); /* Glowing shadow */
 }
 .download img {
     width: 200px; /* Adjust as needed */
     display: block;
     margin: 30px auto;
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 0px 15px rgb(51, 252, 255); /* Glowing shadow */
+    /* box-shadow: 0 0px 15px rgb(51, 252, 255); /* Glowing shadow */
 }
 .download h2 {
     font-size: 1.8rem;
@@ -192,7 +195,7 @@ nav a:hover {
 }
 /* Footer Section */
 footer {
-    background-color: #1c1c1c;
+    background-color: rgb(28, 28, 28, 0%);
     padding: 20px 10%;
     text-align: center;
     font-size: 0.9rem;
@@ -209,6 +212,16 @@ footer a {
 }
 footer a:hover {
     color: #00d6a2;
+}
+#particles-js{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #0A0624;
+    background-position: 70% 70%;
+    position: fixed;
+    top: 0px;
+    z-index:-1;
 }
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
