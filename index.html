@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>CryptoSurf VPN</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
 
   <!-- You can include additional meta tags or icons as needed -->
 </head>
@@ -24,7 +23,7 @@
     </div>
     <!-- Optional Navigation or Links -->
   </header>
-
+  <div id="particles-js"></div>
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-content">
@@ -36,7 +35,7 @@
       <img src="/images/big-logo.png" alt="CryptoSurf VPN Hero Image" />
     </div>
   </section>
-
+  <div class="hero-plans-line"></div>
   <!-- PLANS SECTION -->
   <section class="plans" id="plans">
     <h2>Choose Your Subscription</h2>
@@ -68,7 +67,6 @@
       </div>
     </div>
   </section>
-
   <!-- DOWNLOAD SECTION -->
   <section class="download" id="download">
     <h2>Download OpenVPN Connect</h2>
@@ -98,5 +96,15 @@
       <a href="#contact">Contact Us</a>
     </p>
   </footer>
+  <!-- Optional JavaScript for particles.js or other scripts -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="particles.js"></script>
+  <script>
+    $(document).ready(function() {
+      particlesJS.load('particles-js', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    });
+  </script>
 </body>
 </html>
