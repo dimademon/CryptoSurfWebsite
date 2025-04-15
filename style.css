@@ -3,39 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #0d0d0d; /* Dark background */
     color: #ffffff;
     line-height: 1.5;
 }
-
 /* Header Section */
 header {
-    background-color: #1c1c1c;
+    background-color: #005CB8;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 10%;
+    box-shadow: 0 4px 6px rgba(173, 216, 230, 0.5); /* Light-blue shadow */
 }
-
 header .logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
 }
-
+header .logo-container img {
+    position: absolute;
+    left: 0;
+}
+header .logo-container h1 {
+    margin: 0 auto;
+}
 header .logo-container img {
     height: 50px;
     margin-right: 15px;
+    border-radius: 10px;
 }
-
 header .logo-container h1 {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #00d6a2; /* An accent color for your brand */
+    color: #B8ECFF; /* An accent color for your brand */
+    text-align: center;
+    flex: 1;
 }
-
 nav a {
     color: #ffffff;
     text-decoration: none;
@@ -43,86 +51,76 @@ nav a {
     font-weight: bold;
     transition: color 0.3s;
 }
-
 nav a:hover {
     color: #00d6a2;
 }
-
 /* Hero Section */
 .hero {
-    background-color: #141414;
+    background-color: #0A0624;
     text-align: center;
     padding: 60px 10%;
 }
-
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
 }
-
 .hero-content img {
     width: 200px; /* Adjust as needed */
     display: block;
     margin: 30px auto;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 214, 162, 0.6); /* Glowing shadow */
 }
-
 .hero-content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #00d6a2;
 }
-
 .hero-content p {
     font-size: 1.1rem;
     margin-bottom: 30px;
     color: #d2d2d2;
 }
-
 /* Plans Section */
 .plans {
-    background-color: #1f1f1f;
+    background-color: #0A0624;
     padding: 50px 10%;
+    box-shadow: 0 4px 10px rgba(0, 214, 162, 0.6); /* Glowing shadow */
 }
-
 .plans h2 {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 40px;
     color: #00d6a2;
 }
-
 .plan-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
-
 .plan {
-    background-color: #282828;
+    background-color: #0A0624;
     border-radius: 10px;
     width: 200px;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s;
+    box-shadow: 0 0px 12px rgba(0, 203, 214, 0.6); /* Glowing shadow */
 }
-
 .plan:hover {
     transform: translateY(-5px);
 }
-
 .plan h3 {
     margin-bottom: 10px;
     font-size: 1.3rem;
     color: #ffffff;
 }
-
 .plan .price {
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #fff;
 }
-
 .plan button {
     background-color: #11FFFF;
     color: #000;
@@ -133,31 +131,26 @@ nav a:hover {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .plan button:hover {
     background-color: #0CE0FE;
 }
-
 /* Download Section */
 .download {
-    background-color: #141414;
+    background-color: #0A0624;
     padding: 50px 10%;
     text-align: center;
 }
-
 .download h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #00d6a2;
 }
-
 .download p {
     font-size: 1rem;
     max-width: 700px;
     margin: 0 auto 30px auto;
     color: #d2d2d2;
 }
-
 .download-links {
     display: flex;
     justify-content: center;
@@ -165,7 +158,6 @@ nav a:hover {
     gap: 20px;
     margin-bottom: 30px;
 }
-
 .download-links a {
     display: inline-block;
     text-decoration: none;
@@ -176,11 +168,9 @@ nav a:hover {
     font-weight: bold;
     transition: background-color 0.3s;
 }
-
 .download-links a:hover {
     background-color: #0CE0FE;
 }
-
 /* Footer Section */
 footer {
     background-color: #1c1c1c;
@@ -189,22 +179,18 @@ footer {
     font-size: 0.9rem;
     color: #ffffff;
 }
-
 footer p {
     margin-bottom: 5px;
 }
-
 footer a {
     color: #ffffff;
     text-decoration: none;
     margin: 0 8px;
     transition: color 0.3s;
 }
-
 footer a:hover {
     color: #00d6a2;
 }
-
 /* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .plan-cards {
