@@ -4,38 +4,32 @@
   <meta charset="UTF-8" />
   <title>CryptoSurf VPN</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- You can include additional meta tags or icons as needed -->
+  <link rel="icon" href="/images/favicon.png">
 </head>
 <body>
   <!-- HEADER -->
   <header>
-    <div class="logo-container">
-      <!-- Replace the src with your own CryptoSurf VPN small logo image -->
-      <img src="/images/small-logo.jpg" alt="CryptoSurf VPN Logo">
-      <h1>CryptoSurf VPN</h1>
-      <nav style="display: inline-flex;">
-        <!-- You can add anchor links to different sections if needed -->
+    <img src="/images/small-logo.jpg" alt="CryptoSurf VPN Logo">
+    <h1 class="name">CryptoSurf VPN</h1>
+    <nav>
         <a href="#plans" style="display: inline-block; margin-right: 10px;">Plans</a>
         <a href="#download" style="display: inline-block;">Download</a>
-        <!-- You can add more links or buttons as needed -->
-      </nav>
-    </div>
-    <!-- Optional Navigation or Links -->
+        <a href="index-ru.html" class="lang-button">Русский</a>
+    </nav>
   </header>
   <div id="particles-js"></div>
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-content">
-      <h2>Secure, Private, and Fast VPN</h2>
-      <p>
-        Protect your online activity with end-to-end encryption and experience lightning-fast speeds on all your devices. 
-      </p>
-      <!-- Replace the src with your second CryptoSurf VPN image if desired -->
-      <img src="/images/big-logo.png" alt="CryptoSurf VPN Hero Image" />
+      <h2>Secure, Private and Fast VPN</h2>
+      <div class="hero-description">
+        <p>
+          Protect your online activity with end-to-end encryption and experience lightning-fast speeds on all your devices. 
+        </p>
+        <img src="/images/big-logo.jpg" alt="CryptoSurf VPN Hero Image" />
+      </div>
     </div>
   </section>
-  <div class="hero-plans-line"></div>
   <!-- PLANS SECTION -->
   <section class="plans" id="plans">
     <h2>Choose Your Subscription</h2>
@@ -43,27 +37,27 @@
       <div class="plan">
         <h3>1 Month</h3>
         <p class="price">100 ₽</p>
-        <button>Subscribe</button>
+        <button>Buy</button>
       </div>
       <div class="plan">
         <h3>3 Months</h3>
         <p class="price">280 ₽</p>
-        <button>Subscribe</button>
+        <button>Buy</button>
       </div>
       <div class="plan">
         <h3>6 Months</h3>
         <p class="price">560 ₽</p>
-        <button>Subscribe</button>
+        <button>Buy</button>
       </div>
       <div class="plan">
         <h3>9 Months</h3>
         <p class="price">840 ₽</p>
-        <button>Subscribe</button>
+        <button>Buy</button>
       </div>
       <div class="plan">
         <h3>12 Months</h3>
         <p class="price">1100 ₽</p>
-        <button>Subscribe</button>
+        <button>Buy</button>
       </div>
     </div>
   </section>
@@ -84,7 +78,7 @@
         iOS
       </a>
     </div>
-    <!-- Replace the src with your OpenVPN icon/logo if desired -->
+    <!-- Replace the src with OpenVPN icon/logo if desired -->
     <img src="/images/ovpn.png" alt="OpenVPN Connect Logo" style="width:100px;">
   </section>
 
@@ -92,19 +86,74 @@
   <footer>
     <p>&copy; 2025 CryptoSurf VPN. All rights reserved.</p>
     <p>
-      <a href="#terms">Terms &amp; Policy</a> | 
-      <a href="#contact">Contact Us</a>
+      <a id="terms" onclick="openPop()">Terms &amp; Policy</a> | 
+      <a id="contact">Contact Us</a>
     </p>
   </footer>
-  <!-- Optional JavaScript for particles.js or other scripts -->
+  <div id="terms-popup" class="popup">
+    <div class="popup-content">
+      <h1>Public Offer &amp; Personal Data Processing Policy</h1>
+      <h2>Public Offer</h2>
+      <p id="terms-1">1. General Provisions</p>
+      <p id="terms-1-1">1.1. This public contract (hereinafter referred to as the Offer) is an official proposal by self-employed Dmitrii Vyacheslavovich Vlaskin (hereinafter referred to as the Contractor), addressed to any individual (hereinafter referred to as the Customer), and contains all the essential terms for the provision of informational services.</p>
+      <p id="terms-1-2">1.2. In accordance with paragraph 2 of Article 437 of the Civil Code of the Russian Federation (hereinafter referred to as the Civil Code of the Russian Federation), this document is a public offer and, in case of acceptance of the conditions set forth below and payment for the services provided by the Contractor, the person who accepts this Offer becomes the Customer in accordance with paragraph 3 of Article 438 of the Civil Code of the Russian Federation. Acceptance of the Offer is equivalent to concluding a contract under the terms set forth in the Offer.</p>
+      <p id="terms-1-3">1.3. By making a payment for the services, the Customer guarantees that they have already read and accept all the terms of the Offer as presented in the text of this Offer, as well as the cost of the Service indicated on the Contractor's Website.</p>
+      <p id="terms-2">2. Terms and Definitions</p>
+      <p id="terms-2-1">2.1. Acceptance of the Offer — full and unconditional acceptance of the Offer by the Customer through actions to purchase a subscription to the CryptoSurf VPN service. Acceptance of the Offer creates an Offer Agreement.</p>
+      <p id="terms-2-2">2.2. Offer Agreement — an agreement between the Contractor and the Customer for the provision of informational services for setting up the Customer's device connection to the Internet via a Virtual Private Network (VPN), concluded through acceptance of the Offer.</p>
+      <p id="terms-2-3">2.3. Customer — a person who has accepted the Offer and thus becomes the Customer.</p>
+      <p id="terms-2-4">2.4. Offer — this document, the Offer Agreement for the provision of informational services by the Contractor, published on the Internet at: https://cryptosurf.ru/</p>
+      <p id="terms-2-5">2.5. Profile — a configuration file with the .ovpn extension.</p>
+      <p id="terms-2-6">2.6. VPN — Virtual Private Network, an extension of a network through an existing public network, such as the Internet. A Virtual Private Network allows managing network data flow and provides important functions such as data identification and protection.</p>
+      <p id="terms-2-7">2.7. Telegram — a messaging application.</p>
+      <p id="terms-2-8">2.8. Telegram username — the Telegram username (starts with the "@" symbol, e.g., "@username").</p>
+      <p id="terms-2-9">2.9. Telegram user ID — the unique identifier of a Telegram user (a numeric value, e.g., "123456789").</p>
+      <p id="terms-3">3. Subject of the Agreement</p>
+      <p id="terms-3-1">3.1. The subject of this Offer is the paid provision of informational services by the Contractor by providing the Customer with a Profile and instructions for connecting to the VPN using the Profile.</p>
+      <p id="terms-3-2">3.2. The Customer confirms that before concluding the Agreement (Acceptance of this Offer), they have studied all the complete information about the terms, procedure for providing services, and the Contractor's involvement.</p>
+      <p id="terms-4">4. Representations and Warranties of the Parties</p>
+      <p id="terms-4-1">4.1. The Contractor represents and warrants that:</p>
+      <p id="terms-4-1-1">4.1.1. They are self-employed and have the right to carry out their activities in accordance with the current legislation of the Russian Federation.</p>
+      <p id="terms-4-1-2">4.1.2. They have all the necessary rights and authority to conclude this Agreement.</p>
+      <p id="terms-4-1-3">4.1.3. The services provided to the Customer comply with the requirements of the legislation of the Russian Federation and do not violate it.</p>
+      <p id="terms-4-2">4.2. The Customer represents and warrants that:</p>
+      <p id="terms-4-2-1">4.2.1. They are a capable individual who has reached the age of 18.</p>
+      <p id="terms-4-2-2">4.2.2. They have all the necessary rights and authority to conclude this Agreement.</p>
+      <p id="terms-4-2-3">4.2.3. They will not use the Contractor's services for activities prohibited by the legislation of the Russian Federation.</p>
+      <p id="terms-4-2-4">4.2.4. They will not use the Contractor's services for illegal activities, including but not limited to the distribution of malicious software, spam, phishing, and other types of fraud.</p>
+      <p id="terms-4-2-5">4.2.5. They will not use the Contractor's services to violate the rights of third parties, including but not limited to copyright infringement, trademark rights, and other intellectual property rights.</p>
+      <p id="terms-4-2-6">4.2.6. They will not use the Contractor's services for activities that may cause harm to the Contractor or third parties.</p>
+      <p id="terms-4-2-7">4.2.7. They will not use the Contractor's services for activities that may disrupt the Internet or the Contractor's equipment.</p>
+      <p id="terms-4-2-8">4.2.8. They will not use the Contractor's services for activities that may disrupt the Internet or third-party equipment.</p>
+      <p id="terms-5">5. Payment Procedure and Terms of Service Provision</p>
+      <p id="terms-5-1">5.1. Available subscription periods and their costs are published on the website https://cryptosurf.ru/</p>
+      <p id="terms-5-2">5.2. Payment is made through the Telegram Bot @CryptoSurfVPN_bot</p>
+      <p id="terms-5-3">5.3. The Contractor is not responsible for the actions of payment systems.</p>
+      <p id="terms-5-4">5.4. The Contractor is not responsible for the actions of communication operators and Internet providers.</p>
+      <p id="terms-5-5">5.5. The Contractor is not responsible for the actions of third parties that may affect the quality of the services provided.</p>
+
+      <h2>Personal Data Processing Policy</h2>
+      <p id="policy-1">1. The Contractor represents and warrants that they do not collect, store, or use any personal data of the Customer except for the Telegram username and Telegram user ID.</p>
+      <p id="policy-2">2. The Contractor does not transfer the Customer's personal data to third parties, except in cases provided for by the legislation of the Russian Federation.</p>
+      <p id="policy-3">3. The Contractor takes all necessary measures to protect the Customer's personal data from unauthorized access, destruction, alteration, blocking, copying, distribution, and other unlawful actions.</p>
+      <button onclick="openPop()">
+      <p>Close</p>
+      </button>
+    </div>
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="particles.js"></script>
   <script>
-    $(document).ready(function() {
-      particlesJS.load('particles-js', function() {
-        console.log('callback - particles.js config loaded');
-      });
-    });
+    function openPop() {
+        const popDialog =
+            document.getElementById(
+                "terms-popup"
+            );
+        popDialog.style.visibility =
+            popDialog.style.visibility ===
+                "visible"
+                ? "hidden"
+                : "visible";
+    }
   </script>
 </body>
 </html>
