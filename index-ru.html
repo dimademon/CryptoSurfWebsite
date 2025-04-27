@@ -89,13 +89,12 @@
   <footer>
     <p>&copy; 2025 CryptoSurf VPN. Все права защищены.</p>
     <p>
-      <a id="terms" onclick="openPop()">Оферта &amp; Политика</a> | 
-      <a id="contact">Контакты</a>
+      <a id="terms" onclick="openTerms()">Оферта &amp; Политика</a> | 
+      <a id="contact" onclick="openContacts()">Контакты</a>
     </p>
   </footer>
   <div id="terms-popup" class="popup">
     <div class="popup-content">
-      <h1>Публичная Оферта &amp; Политика обработки персональных данных</h1>
       <h2>Публичная оферта</h2>
       <p id="terms-1">1. Общие положения</p>
       <p id="terms-1-1">1.1. Настоящий публичный договор (далее — Оферта) представляет собой официальное предложение самозанятого Власкина Дмитрия Вячеславовича (далее — Исполнитель), адресованное любому физическому лицу (далее — Заказчик), и содержит все существенные условия по оказанию информационных услуг.</p>
@@ -135,21 +134,41 @@
       <p id="terms-5-4">5.4. Исполнитель не несет ответственности за действия операторов связи и интернет-провайдеров.</p>
       <p id="terms-5-5">5.5. Исполнитель не несет ответственности за действия третьих лиц, которые могут повлиять на качество предоставляемых услуг.</p>
 
-      <h2>Политика обработки персональных данных</h2>
+      <h2 id="policy">Политика обработки персональных данных</h2>
       <p id="policy-1">1. Исполнитель заверяет и гарантирует, что не собирает, не хранит и не использует никакие персональные данные Заказчика кроме Telegram username и Telegram user id</p>
       <p id="policy-2">2. Исполнитель не передает персональные данные Заказчика третьим лицам, кроме случаев, предусмотренных законодательством Российской Федерации.</p>
       <p id="policy-3">3. Исполнитель принимает все необходимые меры для защиты персональных данных Заказчика от несанкционированного доступа, уничтожения, изменения, блокирования, копирования, распространения и других неправомерных действий.</p>
-      <button onclick="openPop()">
+      <button onclick="openTerms()">
         <p>Закрыть</p>
       </button>
     </div>
+  </div>
+  <div id="contacts-popup" class="popup">
+    <div class="popup-content">
+      <h1>Контакты</h1>
+      <p>Email: cryptosurf@morke.org</p>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="particles.js"></script>
   <script>
-    function openPop() {
+    function openTerms() {
         const popDialog =
             document.getElementById(
                 "terms-popup"
+            );
+        popDialog.style.visibility =
+            popDialog.style.visibility ===
+                "visible"
+                ? "hidden"
+                : "visible";
+    }
+  </script>
+  <script>
+    function openContacts() {
+        const popDialog =
+            document.getElementById(
+                "contacts-popup"
             );
         popDialog.style.visibility =
             popDialog.style.visibility ===

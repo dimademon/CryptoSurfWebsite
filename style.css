@@ -220,7 +220,7 @@ footer a:hover {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -39%);
+    transform: translate(-50%, -40%);
     padding: 20px;
     width: 90%;
     background-color: #040049;
@@ -228,11 +228,27 @@ footer a:hover {
     z-index: 1000;
     visibility: hidden;
 }
-#terms-popup h1 {
+#contacts-popup {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 750%);
+    padding: 20px;
+    width: 90%;
+    background-color: #040049;
+    border-radius: 8px;
+    z-index: 1000;
+    visibility: hidden;
+}
+#contacts-popup h1 {
     font-size: 1.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     color: #ffffff;
     align-self: center;
+}
+#contacts-popup p {
+    font-size: 1rem;
+    color: #ffffff;
 }
 #terms-popup h2 {
     position: relative;
@@ -240,6 +256,11 @@ footer a:hover {
     margin-bottom: 15px;
     align-self: center;
     text-decoration: underline;
+}
+#policy {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 #terms-popup p {
     font-size: 1rem;
@@ -333,7 +354,7 @@ footer a:hover {
 #terms-5-2,
 #terms-5-3,
 #terms-5-4,
-#terms-5-5, {
+#terms-5-5 {
     margin-left: 18px;
 }
 #terms-4-1-1,
