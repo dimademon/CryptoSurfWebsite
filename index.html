@@ -86,13 +86,12 @@
   <footer>
     <p>&copy; 2025 CryptoSurf VPN. All rights reserved.</p>
     <p>
-      <a id="terms" onclick="openPop()">Terms &amp; Policy</a> | 
-      <a id="contact">Contact Us</a>
+      <a id="terms" onclick="openTerms()">Terms &amp; Policy</a> | 
+      <a id="contact" onclick="openContacts()">Contact Us</a>
     </p>
   </footer>
   <div id="terms-popup" class="popup">
     <div class="popup-content">
-      <h1>Public Offer &amp; Personal Data Processing Policy</h1>
       <h2>Public Offer</h2>
       <p id="terms-1">1. General Provisions</p>
       <p id="terms-1-1">1.1. This public contract (hereinafter referred to as the Offer) is an official proposal by self-employed Dmitrii Vyacheslavovich Vlaskin (hereinafter referred to as the Contractor), addressed to any individual (hereinafter referred to as the Customer), and contains all the essential terms for the provision of informational services.</p>
@@ -136,17 +135,37 @@
       <p id="policy-1">1. The Contractor represents and warrants that they do not collect, store, or use any personal data of the Customer except for the Telegram username and Telegram user ID.</p>
       <p id="policy-2">2. The Contractor does not transfer the Customer's personal data to third parties, except in cases provided for by the legislation of the Russian Federation.</p>
       <p id="policy-3">3. The Contractor takes all necessary measures to protect the Customer's personal data from unauthorized access, destruction, alteration, blocking, copying, distribution, and other unlawful actions.</p>
-      <button onclick="openPop()">
+      <button onclick="openTerms()">
       <p>Close</p>
       </button>
     </div>
+  </div>
+  <div id="contacts-popup" class="popup">
+    <div class="popup-content">
+      <h1>Contacts</h1>
+      <p>Email: cryptosurf@morke.org</p>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="particles.js"></script>
   <script>
-    function openPop() {
+    function openTerms() {
         const popDialog =
             document.getElementById(
                 "terms-popup"
+            );
+        popDialog.style.visibility =
+            popDialog.style.visibility ===
+                "visible"
+                ? "hidden"
+                : "visible";
+    }
+  </script>
+  <script>
+    function openContacts() {
+        const popDialog =
+            document.getElementById(
+                "contacts-popup"
             );
         popDialog.style.visibility =
             popDialog.style.visibility ===
